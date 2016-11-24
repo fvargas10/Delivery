@@ -1,0 +1,5 @@
+C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\DataAccess\obj\Debug\DataAccess.pdb

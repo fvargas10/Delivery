@@ -1,0 +1,7 @@
+C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\BussinessRules\bin\Debug\BussinessRules.dll
+C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\BussinessRules\bin\Debug\BussinessRules.pdb
+C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\BussinessRules\bin\Debug\DataAccess.dll
+C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\BussinessRules\bin\Debug\DataAccess.pdb
+C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\BussinessRules\obj\Debug\BussinessRules.csprojResolveAssemblyReference.cache
+C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\BussinessRules\obj\Debug\BussinessRules.dll
+C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\BussinessRules\obj\Debug\BussinessRules.pdb
