@@ -7,3 +7,12 @@ C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\Proyect.Delivery\obj\Debug\P
 C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\Proyect.Delivery\obj\Debug\Proyect.Delivery.pdb
 C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\Proyect.Delivery\bin\DataAccess.dll
 C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\Proyect.Delivery\bin\DataAccess.pdb
+C:\Users\Francisco\Documents\GitHub\Delivery\DELIVERY VFINAL\Delivery\Proyect.Delivery\bin\Proyect.Delivery.dll
+C:\Users\Francisco\Documents\GitHub\Delivery\DELIVERY VFINAL\Delivery\Proyect.Delivery\bin\Proyect.Delivery.pdb
+C:\Users\Francisco\Documents\GitHub\Delivery\DELIVERY VFINAL\Delivery\Proyect.Delivery\bin\BussinessRules.dll
+C:\Users\Francisco\Documents\GitHub\Delivery\DELIVERY VFINAL\Delivery\Proyect.Delivery\bin\DataAccess.dll
+C:\Users\Francisco\Documents\GitHub\Delivery\DELIVERY VFINAL\Delivery\Proyect.Delivery\bin\BussinessRules.pdb
+C:\Users\Francisco\Documents\GitHub\Delivery\DELIVERY VFINAL\Delivery\Proyect.Delivery\bin\DataAccess.pdb
+C:\Users\Francisco\Documents\GitHub\Delivery\DELIVERY VFINAL\Delivery\Proyect.Delivery\obj\Debug\Proyect.Delivery.csprojResolveAssemblyReference.cache
+C:\Users\Francisco\Documents\GitHub\Delivery\DELIVERY VFINAL\Delivery\Proyect.Delivery\obj\Debug\Proyect.Delivery.dll
+C:\Users\Francisco\Documents\GitHub\Delivery\DELIVERY VFINAL\Delivery\Proyect.Delivery\obj\Debug\Proyect.Delivery.pdb

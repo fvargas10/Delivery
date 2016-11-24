@@ -15,16 +15,21 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        <div class="col-lg-1">
+        
+        <asp:ContentPlaceHolder ID="Body" runat="server">
+
+            jgf
+    </asp:ContentPlaceHolder>
+        </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">      
             <asp:Menu ID="Menu1" runat="server">
                 <Items>
                     <asp:MenuItem Text="PRUEBA" Value="prueba" ></asp:MenuItem>
                 </Items>
             </asp:Menu>
-        </div>
         </asp:ContentPlaceHolder>
-    </div>
+    </div> 
         
     </form>
 </body>
