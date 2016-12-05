@@ -57,23 +57,22 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AddPlato.aspx" />
     <Content Include="AddRestaurant.aspx" />
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.js" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\bootstrap.min.js" />
-    <Content Include="WebForm1.aspx" />
-    <None Include="Content\jquery-1.9.1.intellisense.js" />
-    <Content Include="Content\jquery-1.9.1.js" />
-    <Content Include="Content\jquery-1.9.1.min.js" />
-    <Content Include="Content\jquery-3.1.1.min.js" />
-    <Content Include="Content\npm.js" />
+    <Content Include="Administracion.aspx" />
+    <Content Include="AgregarPlato.aspx" />
+    <Content Include="BuscarRestaurant.aspx" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\estilo.css" />
+    <Content Include="css\Home.aspx" />
+    <Content Include="css\libro_recla_04_12.png" />
+    <Content Include="favicon.ico" />
     <Content Include="images\addrest.JPG" />
     <Content Include="images\almejas.JPG" />
     <Content Include="images\almejas222.jpg" />
+    <Content Include="images\asdasdad.JPG" />
     <Content Include="images\bienvenido.PNG" />
     <Content Include="images\chorito.JPG" />
     <Content Include="images\curanto.jpg" />
@@ -94,47 +93,72 @@
     <Content Include="images\texturaadministrador.jpg" />
     <Content Include="Index.aspx" />
     <Content Include="AddAdmin.aspx" />
-    <Content Include="LoginAdmin.aspx" />
-    <Content Include="LoginRestaurant.aspx" />
-    <Content Include="LoginUser.aspx" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\npm.js" />
     <Content Include="MainAdmin.aspx" />
     <Content Include="ManageLocal.aspx" />
-    <Content Include="RegisterUser.aspx" />
+    <Content Include="Principal.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\jquery-1.9.1.min.map" />
-    <Content Include="Principal.Master" />
-    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\jquery-1.9.1.js" />
-    <Content Include="Scripts\jquery-1.9.1.min.js" />
-    <Content Include="Scripts\jquery-2.0.3.min.js" />
-    <Content Include="Scripts\npm.js" />
+    <Content Include="Plantilla.Master" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-theme.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="RegistroUsuario.aspx" />
+    <Content Include="RestaurantIngreso.aspx" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="UsuarioIngreso.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddPlato.aspx.cs">
-      <DependentUpon>AddPlato.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AddPlato.aspx.designer.cs">
-      <DependentUpon>AddPlato.aspx</DependentUpon>
-    </Compile>
     <Compile Include="AddRestaurant.aspx.cs">
       <DependentUpon>AddRestaurant.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AddRestaurant.aspx.designer.cs">
       <DependentUpon>AddRestaurant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion.aspx.cs">
+      <DependentUpon>Administracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion.aspx.designer.cs">
+      <DependentUpon>Administracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarPlato.aspx.cs">
+      <DependentUpon>AgregarPlato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarPlato.aspx.designer.cs">
+      <DependentUpon>AgregarPlato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarRestaurant.aspx.cs">
+      <DependentUpon>BuscarRestaurant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuscarRestaurant.aspx.designer.cs">
+      <DependentUpon>BuscarRestaurant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="css\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="css\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -150,27 +174,6 @@
     <Compile Include="AddAdmin.aspx.designer.cs">
       <DependentUpon>AddAdmin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LoginAdmin.aspx.cs">
-      <DependentUpon>LoginAdmin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LoginAdmin.aspx.designer.cs">
-      <DependentUpon>LoginAdmin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LoginRestaurant.aspx.cs">
-      <DependentUpon>LoginRestaurant.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LoginRestaurant.aspx.designer.cs">
-      <DependentUpon>LoginRestaurant.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LoginUser.aspx.cs">
-      <DependentUpon>LoginUser.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LoginUser.aspx.designer.cs">
-      <DependentUpon>LoginUser.aspx</DependentUpon>
-    </Compile>
     <Compile Include="MainAdmin.aspx.cs">
       <DependentUpon>MainAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -185,31 +188,44 @@
     <Compile Include="ManageLocal.aspx.designer.cs">
       <DependentUpon>ManageLocal.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Principal.Master.cs">
-      <DependentUpon>Principal.Master</DependentUpon>
+    <Compile Include="Plantilla.Master.cs">
+      <DependentUpon>Plantilla.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Principal.Master.designer.cs">
-      <DependentUpon>Principal.Master</DependentUpon>
+    <Compile Include="Plantilla.Master.designer.cs">
+      <DependentUpon>Plantilla.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.aspx.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.aspx.designer.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegisterUser.aspx.cs">
-      <DependentUpon>RegisterUser.aspx</DependentUpon>
+    <Compile Include="RegistroUsuario.aspx.cs">
+      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RegisterUser.aspx.designer.cs">
-      <DependentUpon>RegisterUser.aspx</DependentUpon>
+    <Compile Include="RegistroUsuario.aspx.designer.cs">
+      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="RestaurantIngreso.aspx.cs">
+      <DependentUpon>RestaurantIngreso.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="RestaurantIngreso.aspx.designer.cs">
+      <DependentUpon>RestaurantIngreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioIngreso.aspx.cs">
+      <DependentUpon>UsuarioIngreso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsuarioIngreso.aspx.designer.cs">
+      <DependentUpon>UsuarioIngreso.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

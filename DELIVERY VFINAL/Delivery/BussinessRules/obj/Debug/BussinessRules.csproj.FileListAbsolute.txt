@@ -5,3 +5,10 @@ C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\BussinessRules\bin\Debug\Dat
 C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\BussinessRules\obj\Debug\BussinessRules.csprojResolveAssemblyReference.cache
 C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\BussinessRules\obj\Debug\BussinessRules.dll
 C:\Users\Francisco\Desktop\DELIVERY VFINAL\Delivery\BussinessRules\obj\Debug\BussinessRules.pdb
+C:\Users\Francisco\Documents\GitHub\Delivery\DELIVERY VFINAL\Delivery\BussinessRules\bin\Debug\BussinessRules.dll
+C:\Users\Francisco\Documents\GitHub\Delivery\DELIVERY VFINAL\Delivery\BussinessRules\bin\Debug\BussinessRules.pdb
+C:\Users\Francisco\Documents\GitHub\Delivery\DELIVERY VFINAL\Delivery\BussinessRules\bin\Debug\DataAccess.dll
+C:\Users\Francisco\Documents\GitHub\Delivery\DELIVERY VFINAL\Delivery\BussinessRules\bin\Debug\DataAccess.pdb
+C:\Users\Francisco\Documents\GitHub\Delivery\DELIVERY VFINAL\Delivery\BussinessRules\obj\Debug\BussinessRules.csprojResolveAssemblyReference.cache
+C:\Users\Francisco\Documents\GitHub\Delivery\DELIVERY VFINAL\Delivery\BussinessRules\obj\Debug\BussinessRules.dll
+C:\Users\Francisco\Documents\GitHub\Delivery\DELIVERY VFINAL\Delivery\BussinessRules\obj\Debug\BussinessRules.pdb

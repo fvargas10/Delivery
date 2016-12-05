@@ -4,14 +4,73 @@ using System.Linq;
 using System.Text;
 using DataAccess;
 using System.Data.Common;
-using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using System.Security.Cryptography;
+using System.IO;
 
 namespace BussinessRules
 {
     public class CatalogAdministrador
     {
-        
+        //ENCRIPTACION Y DESENCRIPTACION DE LAS CLAVES PARA EL LOGIN
+
+        public string GetMD5(string str)
+        {
+            MD5 md5 = MD5CryptoServiceProvider.Create();
+            ASCIIEncoding encoding = new ASCIIEncoding();
+            byte[] stream = null;
+            StringBuilder sb = new StringBuilder();
+            stream = md5.ComputeHash(encoding.GetBytes(str));
+            for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
+            return sb.ToString();
+        }
+
+        public byte[] Clave = Encoding.ASCII.GetBytes("Tu Clave");
+        public byte[] IV = Encoding.ASCII.GetBytes("Devjoker7.37hAES");
+
+        public string Encripta(string Cadena)
+        {
+
+            byte[] inputBytes = Encoding.ASCII.GetBytes(Cadena);
+            byte[] encripted;
+            RijndaelManaged cripto = new RijndaelManaged();
+            using (MemoryStream ms = new MemoryStream(inputBytes.Length))
+            {
+                using (CryptoStream objCryptoStream = new CryptoStream(ms, cripto.CreateEncryptor(Clave, IV), CryptoStreamMode.Write))
+                {
+                    objCryptoStream.Write(inputBytes, 0, inputBytes.Length);
+                    objCryptoStream.FlushFinalBlock();
+                    objCryptoStream.Close();
+                }
+                encripted = ms.ToArray();
+            }
+            return Convert.ToBase64String(encripted);
+        }
+
+
+
+        public string Desencripta(string Cadena)
+        {
+            byte[] inputBytes = Convert.FromBase64String(Cadena);
+            byte[] resultBytes = new byte[inputBytes.Length];
+            string textoLimpio = String.Empty;
+            RijndaelManaged cripto = new RijndaelManaged();
+            using (MemoryStream ms = new MemoryStream(inputBytes))
+            {
+                using (CryptoStream objCryptoStream = new CryptoStream(ms, cripto.CreateDecryptor(Clave, IV), CryptoStreamMode.Read))
+                {
+                    using (StreamReader sr = new StreamReader(objCryptoStream, true))
+                    {
+                        textoLimpio = sr.ReadToEnd();
+                    }
+                }
+            }
+            return textoLimpio;
+        }
+        //TERMINO DE LOS DOS METODOS PARA EL LOGIN
+
+
+
         public bool LoginAdmin(string rut_admin, string pass_admin)
         {
             bool ok = false;
@@ -52,6 +111,55 @@ namespace BussinessRules
                 return false;
             }
         }
+
+         // VALIDACION DE RUT INGRESADO
+        public bool ValidaRut(string rut)
+        {
+            rut = rut.Replace(".", "").ToUpper();
+            Regex expresion = new Regex("^([0-9]+-[0-9K])$");
+            string dv = rut.Substring(rut.Length - 1, 1);
+            if (!expresion.IsMatch(rut))
+            {
+                return false;
+            }
+            char[] charCorte = { '-' };
+            string[] rutTemp = rut.Split(charCorte);
+            if (dv != Digito(int.Parse(rutTemp[0])))
+            {
+                return false;
+            }
+            return true;
+        }
+
+
+        public string Digito(int rut)
+        {
+            int suma = 0;
+            int multiplicador = 1;
+            while (rut != 0)
+            {
+                multiplicador++;
+                if (multiplicador == 8)
+                    multiplicador = 2;
+                suma += (rut % 10) * multiplicador;
+                rut = rut / 10;
+            }
+            suma = 11 - (suma % 11);
+            if (suma == 11)
+            {
+                return "0";
+            }
+            else if (suma == 10)
+            {
+                return "K";
+            }
+            else
+            {
+                return suma.ToString();
+            }
+        }
+
+        //TERMINAN LOS DOS METODOS PARA EL RUT
 
         public void insertAdmin(Administrador ad)
         {

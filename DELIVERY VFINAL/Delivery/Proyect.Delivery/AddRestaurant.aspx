@@ -1,11 +1,22 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddRestaurant.aspx.cs" Inherits="Proyect.Delivery.AddRestaurant" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddRestaurant.aspx.cs" Inherits="Proyect.Delivery.AddRestaurant" %>    
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <script type="text/javascript">
+        //funcion para validar el correo
+        function VerificaEmail(Email) {
+            var emailRegEx = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+            if (Email.search(emailRegEx) == -1) {
+                status = false;
+            } else {
+                status = true;
+            }
+            return status;
+        }
+</script>
     <style type="text/css">
         .auto-style1 {
             width: 100%;
@@ -98,7 +109,9 @@
                 <td>
                     <asp:TextBox ID="txtcorreo" runat="server" EnableTheming="True" Width="167px"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="Label11" runat="server" Text="Label"></asp:Label>
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
