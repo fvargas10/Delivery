@@ -5,6 +5,7 @@ using System.Text;
 using DataAccess;
 using System.Data.Common;
 using System.Data;
+using System.Globalization;
 
 namespace BussinessRules
 {
@@ -71,6 +72,7 @@ namespace BussinessRules
 
         public List<Restaurant> findLocal(string name)
         {
+            String res;
             DataAccess.DataBase bd = new DataBase();
             bd.connect();
             string sql = "select * from RESTAURANT where NOMBRE_REST like '%" + name + "%'";
@@ -80,6 +82,8 @@ namespace BussinessRules
             DbDataReader result = bd.Query();
             while (result.Read())
             {
+                
+                res = result.GetDateTime(4).ToString("t", CultureInfo.CreateSpecificCulture("en-us"));
                 a = new Restaurant(result.GetString(1), result.GetString(2), result.GetString(3), result.GetDateTime(4), result.GetDateTime(5), result.GetString(6), result.GetString(7));
                 llocal.Add(a);
             }
